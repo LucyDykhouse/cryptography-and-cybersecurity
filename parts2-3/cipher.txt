@@ -1,0 +1,20 @@
+The cipher I created is as follows:
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 , . ? ! '
+W E L C O M T H S , A P I ! D U N Y F R V B Q . ' K G J X 1 0 2 4 6 5 3 ? 9 7 Z 8
+
+I created this cipher using the SWAPI documentation that I had open from yesterday's lab. The first instance of every alphabet letter or common character is recorded in the order that they appear on the website.
+For instance, the first word in the documentation is 'Welcome,' so the first 6 letters of the cipher are the first instances of w, e, l, c, o, and m.
+
+Enciphering phrases:
+
+ILOVECRYPTOGRAPHY!
+SPDBOLY'URDTYWUH'Z
+
+Deciphering phrases:
+
+W E L C O M T H S , A P I ! D U N Y F R V B Q . ' K G J X 1 0 2 4 6 5 3 ? 9 7 Z 8
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1 2 3 4 5 6 7 8 9 0 , . ? ! '
+
+SPDBOLY'URDTYWUH'Z
+ILOVECRYPTOGRAPHY!

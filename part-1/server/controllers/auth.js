@@ -1,19 +1,23 @@
 const users = []
-
 const bcrypt = require('bcryptjs');
 
 module.exports = {
     login: (req, res) => {
-      console.log('Logging In User')
-      console.log(req.body)
-      const { username, password } = req.body
+      const { username, password } = req.body;
       for (let i = 0; i < users.length; i++) {
-        if (users[i].username === username && users[i].password === password) {
-          res.status(200).send(users[i])
+        if (users[i].username === username) {
+          const authenticated = bcrypt.compareSync(password, users[i].passwordHash);
+          if(authenticated) {
+            let userToSend = {...users[i]};
+            delete userToSend.passwordHash;
+            console.log(userToSend);
+            res.status(200).send(userToSend);
+          }
         }
       }
-      res.status(400).send("User not found.")
+      res.status(400).send("User not found.");
     },
+
     register: (req, res) => {
         const {username, email, firstName, lastName, password} = req.body;
         const salt = bcrypt.genSaltSync();
@@ -30,8 +34,8 @@ module.exports = {
         users.push(userDataToStore);
         let userDataToSend = {...userDataToStore};
         delete userDataToSend.passwordHash;
-        console.log(userDataToSend);
-        console.log(userDataToStore);
+        //console.log(userDataToSend);
+        //console.log(userDataToStore);
         res.status(200).send(userDataToSend);
     }
 }

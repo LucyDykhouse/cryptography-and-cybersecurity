@@ -1,0 +1,8 @@
+<<View Word Wrap>>
+
+Just last year, on October 22, Steelcase Inc. reported a cybersecurity attack to the U.S. Securities and Exchange Commission. The attack was believed to be instigated by Ryuk, a form of ransomware that infiltrates systems and encrypts files to block access to them. Ryuk then requested a ransom in return for deciphering the files that it encrypted. Steelcase, along with other manufacturers, are sensitive to this type of attack because time is money: they can't afford to halt all production while files within their system were encrypted. Additionally, many manufacturers have a fragmented organization, with different facilities having their own IT infrastructure. This makes them particularly vulnerable.
+
+While the exact details of the breach are not publically known, in 2020, the manufacturing industry was the most targeted industry by phishing attempts. In addition to this, manufacturing was the top target for browser exploits, which are breaches that allow attackers to take advantage of vulnerabilities in operating systems and change users’ browser settings without their knowledge.
+
+Following the attack, Steelcase acted quickly, implementing a series of containment measures to address the situation. These measures included shutting down the affected systems and global operations for about two weeks. Now, to protect against these attacks, Steelcase is increasing the segmentation of their network to protect their network as a whole. Additionally, they are looking into technologies that provide early detection of perceived cybersecurity threats.
+

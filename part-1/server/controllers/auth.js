@@ -10,8 +10,9 @@ module.exports = {
           if(authenticated) {
             let userToSend = {...users[i]};
             delete userToSend.passwordHash;
-            console.log(userToSend);
+            //console.log(userToSend);
             res.status(200).send(userToSend);
+            return;
           }
         }
       }
